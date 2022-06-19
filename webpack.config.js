@@ -1,30 +1,12 @@
-import path from 'path';
-import {fileURLToPath} from 'url';
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const config = {
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  mode: 'development',
   entry: './src/index.js',
-  resolve: {
-    fallback: {
-      fs: false,
-      tls: false,
-      net: false,
-      path: false,
-      zlib: false,
-      http: false,
-      https: false,
-      stream: false,
-      crypto: false,
-      util: false,
-      buffer: false,
-      url: false,
-      vm: false,
-      querystring: false,
-      os: false,
-      constants: false,
-      assert: false,
-    },
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -32,7 +14,7 @@ const config = {
     }),
   ],
   output: {
-    filename: 'output.bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
@@ -42,12 +24,10 @@ const config = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
     ],
   },
-  devServer: {
-    static: './dist',
-    port: 9000,
-  },
-  mode: 'development',
 };
-export default config;

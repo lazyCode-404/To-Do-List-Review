@@ -1,26 +1,44 @@
-# To-Do-List
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
->  Testing Practice Project For Microverse By Bwalya Nonde.
+# Todo-list project
+
+> This is a Microverse project that entails a to-do-list.
 
 
 ## Built With
 
-- javascript
+- HTML
+- CSS
+- Javascript
+
+## Live Demo (if available)
+
+[Live Demo Link](https://livedemo.com)
+
+
+## Getting Started
+
+- Inorder to be able to set this up locally and eventually run it, follow the steps;
+
+- Open your Gitbash or your code editor's terminal and run the command git clone git@github.com:Christabelle143/Todo-List.git
+- Then you can pull the work from github to ur local machine using the git pull command.
+- run npm install to install all dependencies used in the project
+- run npm start to start the application on the browser.
+
 
 
 ## Author
-👤 **Bwalya Nonde* 
 
-- GitHub: [@BwalyaNonde](https://github.com/BwalyaNonde)
-- Twitter: [nonde_bwalya](https://twitter.com/nonde_bwalya)
-- LinkedIn: [Bwalya Nonde](https://www.linkedin.com/in/bwalya-nonde-5865601a9/)
+👤 **Author**
 
+- GitHub: [Christabelle143](https://github.com/Christabelle143)
+- Twitter: [@christabelleyo](https://twitter.com/christabelleyo)
+- LinkedIn: [YoutaChristabelle](https://linkedin.com/in/YoutaChristabelle)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
@@ -30,8 +48,7 @@ Give a ⭐️ if you like this project!
 
 - Hat tip to anyone whose code was used
 - Inspiration
-
-
+- etc
 
 ## 📝 License
 
